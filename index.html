@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="container">
             <h1>Christian Collins</h1>
@@ -31,18 +31,19 @@
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I'm a software developer with a strong background in mathematics and computer science, pursuing a Bachelor of
+        <p> I'm a software developer with a strong background in mathematics and computer science, pursuing a Bachelor
+            of
             Science in Computer Science at the University of Alabama at Birmingham with a 4.0 GPA. My skills includes
             programming languages like Python, Java, C, Assembly, and Rust, across Windows, macOS, and Linux platforms.
         </p>
         <br>
-        <p>With experience as a software developer at DarkTower and a Teaching Assistant in UAB's Computer Science
+        <p> With experience as a software developer at DarkTower and a Teaching Assistant in UAB's Computer Science
             Department, I've developed a knack for collaborative problem-solving and effective communication. I'm
             passionate about learning and have a track record of taking on and learning new and complex technical
             concepts.</p>
         <br>
-        <p>I'm also engaged in the tech community as a member of the Association of Computing Machinery and Women in
-            Tech, and have presented at the Future of Education Technology Conference. My goal is to apply my diverse
+        <p> I've strived to be engaged in the tech community as a member of the Association of Computing Machinery and
+            Women in Tech, as well as attending AI meetups in Birmingham. My goal is to apply my diverse
             skills to contribute to innovative software solutions in a dynamic company.</p>
     </section>
 
@@ -68,7 +69,7 @@
 
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>iamchristiancollins@gmail.com, LinkedIn profile, or any other form of contact information here.</p>
+        <p>iamchristiancollins@gmail.com | linkedin.com/in/iamchristiancollins | github.com/iamchristiancollins</p>
     </section>
 
     <footer class="container">
@@ -130,6 +131,27 @@
                 },
             });
     </script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+
 </body>
 
 </html>

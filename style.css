@@ -5,7 +5,8 @@ html, body {
     padding: 0; /* Remove default padding */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     font-family: 'Arial', sans-serif; /* Default font */
-    text-shadow: 2px 2px 4px #000000; /* Text shadow */
+    text-shadow: 5px 5px 10px #000000; /* Text shadow */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Keyframes for background animation */
@@ -14,18 +15,17 @@ html, body {
     100% { background-position: 100% 0; }
 }
 
-/* General Element Styling */
-/* * {
+General Element Styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 /* Body Styling */
 body {
     line-height: 1.6;
     color: #f9f6f6;
-    /* background: linear-gradient(to right, #144f86, #144f86); Gradient background */
     background-size: 200% 200%;
     animation: backgroundAnimation 10s ease infinite;
 }
@@ -40,7 +40,6 @@ body {
 
 /* Header Styling */
 header {
-    /* background: #144f86; */
     color: #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -53,8 +52,6 @@ header h1, header p {
 
 /* Navigation Styling */
 nav ul {
-    /* background: #144f86; */
-    /* color: #fff; */
     list-style-type: none;
     text-align: center;
     padding: 10px 0;
@@ -89,11 +86,12 @@ section {
 /* Footer Styling */
 footer {
     text-align: center;
+    font-size: 0.5em;
     padding: 20px;
-    /* background: #144f86; */
     color: #fff;
     margin-top: 20px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
@@ -111,6 +109,28 @@ footer {
     width: 100%;
     min-height: 100%;
     z-index: -1; /* Ensure it stays in the background */
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    background: linear-gradient(to right, #0e0d0f, #0c234c); /* Gradient background */
     overflow: hidden;
+    
 }
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Ensure it sits above other content */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0c234c; /* Set a background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Add some padding */
+    border-radius: 10px; /* Add rounded corners */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
