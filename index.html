@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<div id="particles-js"></div>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Collins - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
     <header>
         <div class="container">
             <h1>Christian Collins</h1>
-            <p>Software Developer | Specialization</p>
+            <p>Software Developer</p>
         </div>
     </header>
 
@@ -25,18 +31,27 @@
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I'm a software developer with a strong background in mathematics and computer science, pursuing a Bachelor of Science in Computer Science at the University of Alabama at Birmingham with a 4.0 GPA. My skills includes programming languages like Python, Java, C, Assembly, and Rust, across Windows, macOS, and Linux platforms.
-
-            With experience as a software developer at DarkTower and a Teaching Assistant in UAB's Computer Science Department, I've developed a knack for collaborative problem-solving and effective communication. I'm passionate about learning and have a track record of taking on and learning new and complex technical concepts.
-            
-            I'm also engaged in the tech community as a member of the Association of Computing Machinery and Women in Tech, and have presented at the Future of Education Technology Conference. My goal is to apply my diverse skills to contribute to innovative software solutions in a dynamic company.</p>
+        <p>I'm a software developer with a strong background in mathematics and computer science, pursuing a Bachelor of
+            Science in Computer Science at the University of Alabama at Birmingham with a 4.0 GPA. My skills includes
+            programming languages like Python, Java, C, Assembly, and Rust, across Windows, macOS, and Linux platforms.
+        </p>
+        <br>
+        <p>With experience as a software developer at DarkTower and a Teaching Assistant in UAB's Computer Science
+            Department, I've developed a knack for collaborative problem-solving and effective communication. I'm
+            passionate about learning and have a track record of taking on and learning new and complex technical
+            concepts.</p>
+        <br>
+        <p>I'm also engaged in the tech community as a member of the Association of Computing Machinery and Women in
+            Tech, and have presented at the Future of Education Technology Conference. My goal is to apply my diverse
+            skills to contribute to innovative software solutions in a dynamic company.</p>
     </section>
 
     <section id="projects" class="container">
         <h2>Projects</h2>
         <div class="project-item">
             <h3>Project Title 1</h3>
-            <p>Description of your project, technologies used, and what problem it solves. Add a link if it's hosted online.</p>
+            <p>Description of your project, technologies used, and what problem it solves. Add a link if it's hosted
+                online.</p>
         </div>
         <!-- Repeat for other projects -->
     </section>
@@ -53,11 +68,68 @@
 
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Provide your email, LinkedIn profile, or any other form of contact information here.</p>
+        <p>iamchristiancollins@gmail.com, LinkedIn profile, or any other form of contact information here.</p>
     </section>
 
     <footer class="container">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Christian Collins. All rights reserved.</p>
     </footer>
+    <script>
+        particlesJS('particles-js',
+            {
+                /* particles.js config, visit https://vincentgarreau.com/particles.js/ for reference */
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#ffffff" },
+                    shape: {
+                        type: "circle",
+                        stroke: { width: 0, color: "#000000" },
+                        polygon: { nb_sides: 5 },
+                        image: { src: "img/github.svg", width: 100, height: 100 }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        anim: { enable: false, speed: 40, opacity_min: 0.1, sync: false }
+                    },
+                    size: {
+                        value: 5,
+                        random: true,
+                        anim: { enable: false, speed: 1, size_min: 0.1, sync: false }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    },
+                    modes: {
+                        repulse: { distance: 100, duration: 0.4 },
+                        push: { particles_nb: 4 },
+                        remove: { particles_nb: 2 }
+                    }
+                },
+            });
+    </script>
 </body>
+
 </html>
