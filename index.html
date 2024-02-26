@@ -16,9 +16,13 @@
     <header>
         <div class="container">
             <h1>Christian Collins</h1>
-            <p>Software Developer</p>
+            <p>Student | Developer</p>
         </div>
     </header>
+
+    <!-- <div id="topTracks">
+      </div> -->
+
 
     <nav>
         <ul class="container">
@@ -48,20 +52,27 @@
     </section>
 
     <section id="projects" class="container">
-        <h2>Projects</h2>
+        <h2>Current Work</h2>
         <div class="project-item">
-            <h3>Project Title 1</h3>
-            <p>Description of your project, technologies used, and what problem it solves. Add a link if it's hosted
-                online.</p>
+            <h3>This Website</h3>
+            <p>Teaching myself how to make a website using html, css, and javascript</p>
         </div>
         <!-- Repeat for other projects -->
+        <div class="project-item">
+            <h3>Dumb Chess</h3>
+            <p>Description of project here</p>
+        </div>
+        <div class="project-item">
+            <h3>Project</h3>
+            <p>Description of project here</p>
+        </div>
     </section>
 
     <section id="skills" class="container">
         <h2>Skills</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
+            <li>Languages: Python, Java, C, Assembly, Rust</li>
+            <li>Communication, Collaboration</li>
             <li>Skill 3</li>
             <!-- Add more skills as needed -->
         </ul>
@@ -155,6 +166,33 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         }
     </script>
+    <!-- <script>function fetchTopTracks(accessToken) {
+        fetch('https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5', {
+            headers: {
+                'Authorization': `Bearer ${accessToken}`
+            }
+        })
+            .then(response => {
+                if (response.ok) return response.json();
+                throw new Error('Request failed');
+            })
+            .then(data => {
+                console.log(data); // Log the data to see the structure
+                // Assuming you have an element with the ID 'topTracks' where you want to list your top tracks
+                const tracksElement = document.getElementById('topTracks');
+                tracksElement.innerHTML = ''; // Clear existing tracks
+
+                data.items.forEach(track => {
+                    const trackElement = document.createElement('p');
+                    trackElement.textContent = `${track.name} by ${track.artists.map(artist => artist.name).join(', ')}`;
+                    tracksElement.appendChild(trackElement);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+</script> -->
 
 </body>
 
