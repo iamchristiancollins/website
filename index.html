@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<div id="particles-js"></div>
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Collins - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-
 <body>
+    <div id="particles-js"></div>
 
     <header>
         <div class="container">
@@ -19,10 +16,6 @@
             <p>Student | Developer</p>
         </div>
     </header>
-
-    <!-- <div id="topTracks">
-      </div> -->
-
 
     <nav>
         <ul class="container">
@@ -52,19 +45,18 @@
     </section>
 
     <section id="projects" class="container">
-        <h2>Current Work</h2>
+        <h2>Projects</h2>
         <div class="project-item">
-            <h3>This Website</h3>
-            <p>Teaching myself how to make a website using html, css, and javascript</p>
+            <h3>Web Scraping Tool</h3>
+            <p>
+                Developed a web scraper in Python, with RabbitMQ for task management and Docker for deployment. Designed SQL databases for data storage and utilized GitLab for CI/CD
+                </p>
         </div>
         <!-- Repeat for other projects -->
         <div class="project-item">
-            <h3>Dumb Chess</h3>
-            <p>Description of project here</p>
-        </div>
-        <div class="project-item">
-            <h3>Project</h3>
-            <p>Description of project here</p>
+            <h3>Drone Surveilance Software</h3>
+            <p>Designed and developed a drone surveillance system using Python for remote monitoring and data collection. Created user interfaces for drone control and monitoring, ensuring responsive and intuitive designs.
+                </p>
         </div>
     </section>
 
@@ -84,116 +76,14 @@
                 href="https://www.linkedin.com/in/iamchristiancollins">LinkedIn</a> | <a
                 href="https://www.github.com/iamchristiancollins">GitHub</a></p>
         <br>
-
     </section>
 
     <footer class="container">
         <p>&copy; 2024 Christian Collins. All rights reserved.</p>
     </footer>
-    <script>
-        particlesJS('particles-js',
-            {
-                /* particles.js config, visit https://vincentgarreau.com/particles.js/ for reference */
-                particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: "#ffffff" },
-                    shape: {
-                        type: "circle",
-                        stroke: { width: 0, color: "#000000" },
-                        polygon: { nb_sides: 5 },
-                        image: { src: "img/github.svg", width: 100, height: 100 }
-                    },
-                    opacity: {
-                        value: 0.5,
-                        random: false,
-                        anim: { enable: false, speed: 40, opacity_min: 0.1, sync: false }
-                    },
-                    size: {
-                        value: 5,
-                        random: true,
-                        anim: { enable: false, speed: 1, size_min: 0.1, sync: false }
-                    },
-                    line_linked: {
-                        enable: true,
-                        distance: 150,
-                        color: "#ffffff",
-                        opacity: 0.4,
-                        width: 1
-                    },
-                    move: {
-                        enable: true,
-                        speed: 1,
-                        direction: "none",
-                        random: false,
-                        straight: false,
-                        out_mode: "out",
-                        bounce: false,
-                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
-                    }
-                },
-                interactivity: {
-                    detect_on: "canvas",
-                    events: {
-                        onhover: { enable: true, mode: "repulse" },
-                        onclick: { enable: true, mode: "push" },
-                        resize: true
-                    },
-                    modes: {
-                        repulse: { distance: 100, duration: 0.4 },
-                        push: { particles_nb: 4 },
-                        remove: { particles_nb: 2 }
-                    }
-                },
-            });
-    </script>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <script>
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        }
-    </script>
-    <!-- <script>function fetchTopTracks(accessToken) {
-        fetch('https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5', {
-            headers: {
-                'Authorization': `Bearer ${accessToken}`
-            }
-        })
-            .then(response => {
-                if (response.ok) return response.json();
-                throw new Error('Request failed');
-            })
-            .then(data => {
-                console.log(data); // Log the data to see the structure
-                // Assuming you have an element with the ID 'topTracks' where you want to list your top tracks
-                const tracksElement = document.getElementById('topTracks');
-                tracksElement.innerHTML = ''; // Clear existing tracks
-
-                data.items.forEach(track => {
-                    const trackElement = document.createElement('p');
-                    trackElement.textContent = `${track.name} by ${track.artists.map(artist => artist.name).join(', ')}`;
-                    tracksElement.appendChild(trackElement);
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    }
-</script> -->
-
+    <script src="main.js"></script>
 </body>
-
 </html>
